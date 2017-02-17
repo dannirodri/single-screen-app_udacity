@@ -1,3 +1,179 @@
-# single-screen-app_udacity
+# Single-screen-app_Udacity
 
 This is an experimental project for Udacity's Android Development for Beginners course.
+
+#activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalproject.MainActivity">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pasteleria"
+        android:scaleType="centerCrop"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#AA000000"
+        android:layout_above="@+id/call"
+        android:layout_alignBottom="@id/head"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/name"
+        android:shadowColor="#000000"
+        android:textStyle="bold"
+        android:shadowRadius="2"
+        android:shadowDy="8"
+        android:layout_above="@+id/call" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#CC000000"
+        android:layout_alignBottom="@id/head" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/tlf24"
+        android:layout_below="@id/head"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="@string/tlf"
+        android:layout_below="@id/head"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:textColor="#CC000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="Work"
+        android:layout_below="@id/head"
+        android:layout_marginTop="48dp"
+        android:id="@+id/mobile" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:background="#33000000"
+        android:layout_below="@id/call"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:background="#33000000"
+        android:layout_below="@id/call"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/view"
+        android:src="@drawable/email24"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="@string/mail_work"
+        android:layout_below="@id/view"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:id="@+id/mail"
+        android:textColor="#CC000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="Mail"
+        android:layout_below="@id/view"
+        android:layout_marginTop="48dp"
+        android:id="@+id/mail_text" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:background="#33000000"
+        android:layout_below="@id/mail_text"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:background="#33000000"
+        android:layout_below="@id/mail_text"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/view4"
+        android:src="@drawable/web18"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="@string/web"
+        android:layout_below="@id/view4"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:id="@+id/email"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:text="Web"
+        android:layout_below="@id/view4"
+        android:layout_marginTop="48dp" />
+
+
+</RelativeLayout>
+
